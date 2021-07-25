@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*:focus {
+  outline: none;
+}
+
+html body #root {
+  width: 100%;
+  height: 100%;
+  height: 100vh;
+  color: #000205;
+  background-color: #ebeef4;
+  font-family: "Roboto", "Helvetica Neue", sans-serif;
+  font-size: 62.5%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
