@@ -10,11 +10,11 @@ import Dashboard from "../pages/Dashboard";
 export default function Routes() {
 	return (
 		<Switch>
-			<Route exact path="/" component={SignUp} isPrivate={false} />
+			<Route exact path="/" component={SignIn} isPrivate={false} />
 			<Route
 				exact
 				path="/register"
-				component={SignIn}
+				component={SignUp}
 				isPrivate={false}
 			/>
 			<Route exact path="/dashboard" component={Dashboard} isPrivate />

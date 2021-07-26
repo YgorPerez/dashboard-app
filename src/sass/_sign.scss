@@ -1,0 +1,75 @@
+.sign {
+	@include flexCenter;
+	height: 100%;
+	background-color: $dark2;
+
+	.container {
+		@include flexCenter;
+		width: 60em;
+		background-color: $light;
+		flex-direction: column;
+
+		.logo {
+			@include flexCenter;
+			background-color: $darkblue;
+			width: 100%;
+
+			img {
+				padding: 2em;
+				width: 17em;
+				height: 13em;
+			}
+		}
+
+		form {
+			margin-top: 2em;
+			width: 100%;
+			@include flexCenter;
+			flex-direction: column;
+
+			h1 {
+				text-align: center;
+				width: 90%;
+				margin-bottom: 0.2em;
+				color: $darkblue;
+				font-size: 3em;
+			}
+
+			input {
+				width: 90%;
+				margin-bottom: 0.75em;
+				padding: 0.5em;
+				height: 3em;
+				border: none;
+				border-radius: 0.5em;
+				-webkit-border-radius: 0.5em;
+				-moz-border-radius: 0.5em;
+				-ms-border-radius: 0.5em;
+				-o-border-radius: 0.5em;
+				font-size: 1.5em;
+				background-color: $white;
+			}
+
+			button {
+				width: 90%;
+				height: 2em;
+				border: none;
+				border-radius: 0.5em;
+				background-color: $darkblue;
+				color: $white;
+				font-size: 2em;
+				-webkit-border-radius: 0.5em;
+				-moz-border-radius: 0.5em;
+				-ms-border-radius: 0.5em;
+				-o-border-radius: 0.5em;
+			}
+		}
+
+		a {
+			margin: 1em 0;
+			color: $black;
+			cursor: pointer;
+			font-size: 1.6em;
+		}
+	}
+}
