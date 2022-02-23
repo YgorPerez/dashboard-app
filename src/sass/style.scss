@@ -3,7 +3,12 @@
 @import "./mixins";
 @import "./functions";
 @import "./header";
-@import "./_sign";
+@import "./sign";
+@import "./title";
+@import "./profile";
+@import "./dashboard";
+@import "./new";
+@import "./_modal";
 
 * {
 	margin: 0;

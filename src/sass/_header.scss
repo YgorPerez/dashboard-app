@@ -1,0 +1,93 @@
+header {
+	margin: 0;
+	padding: 0;
+	width: 20em;
+	background-color: $darkblue;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+
+	div {
+		background: url(../assets/cover.png);
+		background-color: $darkblue;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 15em;
+		padding-top: 3em;
+
+		img {
+			border-radius: 50%;
+			-webkit-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-ms-border-radius: 50%;
+			-o-border-radius: 50%;
+			display: block;
+			margin: auto;
+			width: 9em;
+			height: 9em;
+			filter: drop-shadow(2px 3px 6px $dark2);
+			-webkit-filter: drop-shadow(2px 3px 6px $dark2);
+			object-fit: cover;
+		}
+	}
+
+	a {
+		font-size: 1.4em;
+		display: block;
+		@include flexCenter;
+		justify-content: flex-start;
+		flex-direction: row;
+		text-decoration: none;
+		padding: 1.2em;
+		color: $white2;
+		transition: all ease-in-out 0.4s;
+
+		svg {
+			margin-bottom: 0.4em;
+		}
+	}
+
+	a:hover {
+		background-color: $dark2;
+		color: $white;
+	}
+}
+
+.content {
+	margin-left: 20em;
+	padding: 1px 1.6rem;
+}
+
+@media (max-width: 700px) {
+	.content {
+		margin-left: 0;
+	}
+
+	header {
+		width: 100%;
+		height: auto;
+		position: relative;
+
+		a {
+			float: left;
+
+			svg {
+				display: none;
+			}
+		}
+
+		div {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 400px) {
+	header {
+		a {
+			text-align: center;
+			float: none;
+		}
+	}
+}

@@ -1,0 +1,148 @@
+.dashboard {
+	@include flexCenter;
+	flex-direction: column;
+
+	span {
+		margin: 1.2em;
+		font-weight: bold;
+		font-size: 1.7em;
+	}
+}
+
+.new {
+	float: right;
+	margin-bottom: 1.5em;
+	font-size: 1.4em;
+	background-color: $green;
+	color: $white !important;
+	border: none;
+	padding: 0.5em;
+	@include flexCenter;
+	font-weight: bold;
+	border-radius: 0.5em;
+	transition: all ease-in 0.2s;
+
+	svg {
+		margin-right: 0.5em;
+		filter: drop-shadow(2px 3px 15px $dark);
+	}
+}
+
+.new:hover {
+	background-color: $green2;
+	transform: scale(1.1);
+	filter: none;
+}
+
+table {
+	background-color: $light2;
+	border: 1px solid $light3;
+	border-collapse: collapse;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	table-layout: fixed;
+	font-size: 1.4em;
+
+	caption {
+		font-size: 1.8em;
+		margin: 0.5em 0 0.75em;
+	}
+
+	tr {
+		background-color: $light2;
+		border: 1px solid $light4;
+		padding: 0.35em;
+		font-size: 1.2em;
+	}
+
+	th,
+	td {
+		text-align: center;
+		padding: 0.62em;
+	}
+
+	th {
+		letter-spacing: 0.1em;
+		text-transform: uppercase;
+	}
+
+	.action {
+		margin-right: 2px;
+		padding: 5px;
+		align-items: center !important;
+		display: inline-block;
+		border-radius: 4px;
+		border: none;
+		text-align: center;
+		font-size: 0.6em;
+
+		svg {
+			vertical-align: middle;
+		}
+	}
+
+	.badge {
+		color: $white;
+		border-radius: 5px;
+		padding: 3px;
+	}
+}
+
+@media (max-width: 600px) {
+	table {
+		border: none;
+
+		caption {
+			font-size: 1.8em;
+		}
+
+		thead {
+			border: none;
+			clip: rect(0 0 0 0);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute;
+			width: 1px;
+		}
+
+		tr {
+			border-bottom: 3px solid $light4;
+			display: block;
+			margin-bottom: 0.65em;
+		}
+
+		td {
+			border-bottom: 1px solid $light4;
+			display: block;
+			font-size: 0.8em;
+			text-align: right;
+		}
+
+		td::before {
+			content: attr(data-label);
+			float: left;
+			font-weight: bold;
+			text-transform: uppercase;
+		}
+
+		tr:last-child,
+		td:last-child {
+			border-bottom: 0;
+			padding-bottom: 0;
+		}
+	}
+}
+
+.btn-more {
+	margin: 1.5em 0;
+	padding: 0.5em;
+	height: 2em;
+	border: none;
+	border-radius: 0.4em;
+	background-color: $darkblue;
+	color: $white;
+	font-size: 1.6em;
+}

@@ -12,7 +12,7 @@ export default function RouteWrapper({
 	if (loading) {
 		return (
 			<div>
-				<h1>placeholder</h1>
+				<h1>Carregando...</h1>
 			</div>
 		);
 	}

@@ -1,0 +1,35 @@
+form {
+	textarea {
+		height: 8em !important;
+		resize: none;
+	}
+
+	input[type="radio"] {
+		margin: 1em 0;
+		height: 1em !important;
+		width: 1em !important;
+	}
+
+	input:disabled {
+		max-width: 40em !important;
+		height: 2.5em !important;
+	}
+
+	input[type="radio"]:not(:first-child) {
+		margin-left: 1em;
+	}
+
+	.status {
+		display: flex;
+		align-items: center;
+		font-size: 1.2em;
+		span {
+			white-space: nowrap;
+			padding-left: 0.5em;
+			font-size: 1.3em;
+		}
+	}
+	button {
+		max-width: 30em !important;
+	}
+}
