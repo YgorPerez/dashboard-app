@@ -20,11 +20,11 @@ export default function Header() {
 			</Link>
 			<Link to="/customers">
 				<FiUser color="$white" size={24} />
-				Users
+				Usuarios
 			</Link>
 			<Link to="/profile">
 				<FiSettings color="$white" size={24} />
-				Configuracoes
+				Configurações
 			</Link>
 		</header>
 	);
