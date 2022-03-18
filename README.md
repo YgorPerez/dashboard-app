@@ -1,10 +1,18 @@
-# [Dashboard app](https://dashboard-system-app.netlify.app) #
-A site built with the purpose to create a whole application, with logins, dashboard, database, scalable, and some features like adding tasks and persons.
-## Technologies ##
-* React
-* JavaScript
-* CSS
-* SASS
-* HTML
-* React-Router
-* Toastify
+# [Dashboard app](https://dashboard-system-app.netlify.app)
+
+A site where you can create an account and manage your own [dashboard](https://dashboard-system-app.netlify.app/dashboards), adding persons, companies and services with a description. You can also edit and delete your entries to the dashboard.
+
+This is a serveless application so it can save data and load it from a database without needing to worry about the backendand and server.
+
+## Technologies
+
+-   [React](https://reactjs.org/) ![logo](src/assets/logo.png)
+-   JavaScript
+-   CSS3
+-   SASS
+-   HTML5
+-   React-Router
+-   Toastify
+-   Context API
+-   React Router
+-   React Icons
