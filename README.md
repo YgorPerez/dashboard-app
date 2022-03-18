@@ -8,7 +8,7 @@ This is a serveless application so it can save data and load it from a database 
 
 ## _Technologies_ <img src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png"  width="25px" alt="">
 
--   _<a href="[https://](https://reactjs.org/)"> React
+-   _<a href="https://reactjs.org/"> React
     <img height="20px" src="https://user-images.githubusercontent.com/54226652/158950038-7e795fee-5c1e-41eb-aefe-539083162384.png" alt="React" >
     </a>_
 -   _<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"> JavaScript
