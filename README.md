@@ -1,6 +1,6 @@
 # _[Dashboard app](https://dashboard-system-app.netlify.app)_ <a href="https://dashboard-system-app.netlify.app"><img src="src/assets/logo.png" height="30px"></a>
 
-A site where you can create an account and manage your own [dashboard](https://dashboard-system-app.netlify.app/dashboards), adding persons, companies and services with a description. You can also edit and delete your entries to the dashboard.
+A site where you can create an account and manage your own [dashboard](https://dashboard-system-app.netlify.app), adding persons, companies and services with a description. You can also edit and delete your entries to the dashboard.
 
 ---
 
