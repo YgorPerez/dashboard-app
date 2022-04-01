@@ -44,3 +44,6 @@ This is a serveless application so it can save data and load it from a database 
 -   _<a href="https://reactjs.org/docs/hooks-intro.html"> React Hooks
     <img height="20px" src="https://user-images.githubusercontent.com/54226652/158961211-da6036d6-ef66-4f2a-a109-3823c5bcae41.png" alt="React Hooks">
     </a>_
+-   <a href="https://firebase.google.com/"> Firebase
+    <img height="20px" src="https://www.gstatic.com/devrel-devsite/prod/v60a82f989527785dbe37a03a591468114489a6d17469fe0c9f3dbd5a48c1b36c/firebase/images/touchicon-180.png" alt="Firebase">
+    </a>
