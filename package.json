@@ -9,7 +9,7 @@
     "context-api": "0.0.2",
     "date-fns": "^2.28.0",
     "firebase": "^9.6.9",
-    "npm": "^8.5.5",
+    "npm": "^8.11.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
