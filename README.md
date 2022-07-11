@@ -2,6 +2,13 @@
 
 A site where you can create an account and manage your own [dashboard](https://dashboard-system-app.netlify.app), adding persons, companies and services with a description. You can also edit and delete your entries to the dashboard.
 
+
+## To access it
+
+Username: `Bia` 
+
+Password: `123`
+
 ---
 
 This is a serveless application so it can save data and load it from a database without needing to worry about the backend and server because firebase does it.
