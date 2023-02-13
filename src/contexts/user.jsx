@@ -1,6 +1,6 @@
-import { createContext, useState, useEffect } from "react";
-import firebase from "../services/firebaseConnection";
+import { createContext, useEffect, useState } from "react";
 import { toast } from "react-toastify";
+import firebase from "../services/firebaseConnection";
 
 export const AuthContext = createContext({});
 
@@ -75,7 +75,7 @@ export default function AuthProvider({ children }) {
 
 				let data = {
 					uid: uid,
-					nome: "test",
+					nome: userProfile.data().nome,
 					avatarUrl: userProfile.data().avatarUrl,
 					email: email,
 				};
