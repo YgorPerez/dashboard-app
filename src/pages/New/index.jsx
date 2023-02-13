@@ -5,11 +5,11 @@ import { useState, useContext, useEffect } from "react";
 import firebase from "../../services/firebaseConnection";
 import { toast } from "react-toastify";
 import { AuthContext } from "../../contexts/user";
-import { useHistory, useParams } from "react-router-dom";
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function New() {
 	const { id } = useParams();
-	const history = useHistory();
+	const navigate = useNavigate();
 
 	const [loadCustomers, setLoadCustomers] = useState(true);
 	const [customers, setCustomers] = useState([]);
@@ -111,7 +111,7 @@ export default function New() {
 					setComplemento("");
 					setStatus("Aberto");
 					setCustomersSelected(0);
-					history.push("/dashboard");
+					navigate("/dashboard");
 				})
 				.catch((err) => {
 					toast.error("Error: " + err);

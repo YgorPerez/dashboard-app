@@ -1,16 +1,16 @@
-import firebase from "firebase/app";
-import "firebase/auth";
-import "firebase/firestore";
-import "firebase/storage";
+import firebase from 'firebase/compat/app';
+import "firebase/compat/auth";
+import "firebase/compat/firestore";
+import "firebase/compat/storage";
 
 let firebaseConfig = {
-	apiKey: "AIzaSyDCbFohzFJzsc3YaySEKA3-tj9nmnA4EsE",
-	authDomain: "system-1fe22.firebaseapp.com",
-	projectId: "system-1fe22",
-	storageBucket: "system-1fe22.appspot.com",
-	messagingSenderId: "5093595630",
-	appId: "1:5093595630:web:6e2f0477dd5beabdd656ff",
-	measurementId: "G-QTPJ1Y5G4F",
+	apiKey: process.env.REACT_APP_API_KEY,
+	authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+	projectId: process.env.REACT_APP_PROJECT_ID,
+	storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+	messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+	appId: process.env.REACT_APP_APP_ID,
+	measurementId: process.env.REACT_APP_MEASUREMENT_ID
 };
 // Initialize Firebase
 if (!firebase.apps.length) {

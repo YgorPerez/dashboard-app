@@ -1,30 +1,23 @@
 import React from "react";
 
-import { Switch } from "react-router-dom";
-import Route from "./Route";
-
-import SignUp from "../pages/SignUp";
-import SignIn from "../pages/SignIn";
-import Dashboard from "../pages/Dashboard";
-import Profile from "../pages/Profile";
+import { Route, Routes } from "react-router-dom";
 import Customers from "../pages/Customers";
+import Dashboard from "../pages/Dashboard";
 import New from "../pages/New";
+import Profile from "../pages/Profile";
+import SignIn from "../pages/SignIn";
+import SignUp from "../pages/SignUp";
 
-export default function Routes() {
+export default function Routing() {
 	return (
-		<Switch>
-			<Route exact path="/" component={SignIn} isPrivate={false} />
-			<Route
-				exact
-				path="/register"
-				component={SignUp}
-				isPrivate={false}
-			/>
-			<Route exact path="/dashboard" component={Dashboard} isPrivate />
-			<Route exact path="/profile" component={Profile} isPrivate />
-			<Route exact path="/customers" component={Customers} isPrivate />
-			<Route exact path="/new" component={New} isPrivate />
-			<Route exact path="/new/:id" component={New} isPrivate />
-		</Switch>
+		<Routes>
+			<Route exact path="/" element={<SignIn/>} isPrivate={false} />
+			<Route exact path="/register" element={<SignUp/>} isPrivate={false} />
+			<Route exact path="/dashboard" element={<Dashboard/>} isPrivate />
+			<Route exact path="/profile" element={<Profile/>} isPrivate />
+			<Route exact path="/customers" element={<Customers/>} isPrivate />
+			<Route exact path="/new" element={<New/>} isPrivate />
+			<Route exact path="/new/:id" element={<New/>} isPrivate />
+		</Routes>
 	);
 }
