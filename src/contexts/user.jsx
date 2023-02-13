@@ -53,7 +53,7 @@ export default function AuthProvider({ children }) {
 					});
 			})
 			.catch((error) => {
-				console.log(error);
+				console.error(error);
 				setLoadingAuth(false);
 				toast.error("Oops algo deu errado!");
 			});
@@ -75,7 +75,7 @@ export default function AuthProvider({ children }) {
 
 				let data = {
 					uid: uid,
-					nome: userProfile.data().nome,
+					nome: "userProfile.data().nome",
 					avatarUrl: userProfile.data().avatarUrl,
 					email: email,
 				};
@@ -86,7 +86,7 @@ export default function AuthProvider({ children }) {
 				toast.success("Bem-vindo de volta!");
 			})
 			.catch((error) => {
-				console.log(error);
+				console.error(error);
 				setLoadingAuth(false);
 				toast.error("Oops algo deu errado!");
 			});
