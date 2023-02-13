@@ -75,7 +75,7 @@ export default function AuthProvider({ children }) {
 
 				let data = {
 					uid: uid,
-					nome: "userProfile.data().nome",
+					nome: "test",
 					avatarUrl: userProfile.data().avatarUrl,
 					email: email,
 				};
